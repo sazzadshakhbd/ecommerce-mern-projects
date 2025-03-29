@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce-mern-projects",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "mern",
+    "projects"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "E-Commerce Projects using MERN Stack",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9"
+  }
+}
