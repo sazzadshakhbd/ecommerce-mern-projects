@@ -8,11 +8,11 @@ app.get('/', (req, res) => {
   res.send('Your Api Testing is Working!');
 });
 
-app.get('/info', (req, res) =>{
+app.delete('/info', (req, res) =>{
   res.send('Your First Information!');
 })
 
-app.get('/home', (req, res) => {
+app.post('/home', (req, res) => {
   res.status(200).send ({
     message: 'Your First Server!',
     status: 'success',
@@ -24,7 +24,7 @@ app.get('/home', (req, res) => {
   });
 })
 
-app.get('/products', (req, res)=>{
+app.put('/products', (req, res)=>{
   res.status(200).send({
     message: 'Your First Products!',
     status: 'success',

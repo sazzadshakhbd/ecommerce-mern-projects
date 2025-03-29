@@ -1,7 +1,8 @@
 Project Name - E-commerce MERN Stack Project
 ---------------------------------------------
-Step-1: Discuss about Course Plan (Done)
-Step-2: Enviroment Setup (Done)
-Step-3: Create Express Server (Done) 
-Step-4: HTTP request and response (Done)
+Step-1: Discuss about Course Plan
+Step-2: Enviroment Setup
+Step-3: Create Express Server
+Step-4: HTTP request and response
 Step-5: Nodemon and Morgan Package Setup [npm i --save-dev nodemon, npm i --save-dev morgan]
+Step-6: API Testing using Postman and VS Code Extension [Thunder Client ]
