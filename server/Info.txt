@@ -6,4 +6,5 @@ Step-3: Create Express Server
 Step-4: HTTP request and response
 Step-5: Nodemon and Morgan Package Setup [npm i --save-dev nodemon, npm i --save-dev morgan]
 Step-6: API Testing using Postman and VS Code Extension [Thunder Client ]
-Step-7:  Middleware in Express [express.json, urlencoded, status 401, 200, 400]
+Step-7:  Middleware in Express [express.json, urlencoded, status 401, 200, 400];
+Step-8: Express Error Middleware [npm i body-parser, ]

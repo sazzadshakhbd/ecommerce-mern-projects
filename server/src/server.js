@@ -73,6 +73,20 @@ app.put('/products', (req, res)=>{
   })
 })
 
+// client error handling
+app.use((req, res, next) => {
+  res.status(404).json({
+    message: "Route is not found"
+  });
+  next();
+})
+
+// server error handling
+app.use((err, req, res, next) => {
+  console.err(err.stack)
+  res.status(500).send('something broke')
+})
+
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
