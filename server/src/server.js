@@ -3,10 +3,47 @@ const app = express();
 const morgan = require('morgan');
 
 app.use(morgan('dev'));
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
+
+
+const isLoggedIn = (req, res, next) => {
+  // console.log('You LoggedIn');
+  const login = true;
+  if(login) {
+    req.body.id = 101;
+    next();
+  } else {
+    res.status(401).send({
+      message: "please Login First"
+    })
+  }
+}
+const isLoggedOut = (req, res, next) => {
+  console.log('You LoggedOut');
+  next();
+}
 
 app.get('/', (req, res) => {
   res.send('Your Api Testing is Working!');
 });
+
+// app.use(isLoggedIn);
+
+// app.get('/api/user', isLoggedIn, isLoggedOut, (req, res) => {
+//   console.log('first')
+//   res.status(200).send({
+//     message: "Your profile is ready"
+//   })
+// })
+app.get('/api/user', isLoggedIn, (req, res) => {
+  // console.log('first')
+  console.log(req.body.id);
+  res.status(200).send({
+    message: "Your profile is ready"
+  })
+})
 
 app.delete('/info', (req, res) =>{
   res.send('Your First Information!');
