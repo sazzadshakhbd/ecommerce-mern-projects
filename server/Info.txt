@@ -8,4 +8,5 @@ Step-5: Nodemon and Morgan Package Setup [npm i --save-dev nodemon, npm i --save
 Step-6: API Testing using Postman and VS Code Extension [Thunder Client ]
 Step-7: Middleware in Express [express.json, urlencoded, status 401, 200, 400];
 Step-8: Express Error Middleware [npm i body-parser, Error handling];
-Step-9: How to handel HTTP Errors [npm i http-errors, ]
+Step-9: How to handel HTTP Errors [npm i http-errors, ];
+Step-10: How to secure API [npm i xss-clean, npm i express-rate-limit]
