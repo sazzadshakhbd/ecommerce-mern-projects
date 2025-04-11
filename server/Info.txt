@@ -11,3 +11,4 @@ Step-8: Express Error Middleware [npm i body-parser, Error handling];
 Step-9: How to handel HTTP Errors [npm i http-errors, ];
 Step-10: How to secure API [npm i xss-clean, npm i express-rate-limit]
 Step-11: Environment variable & .gitignore [search node gitignore, npm i dotenv]
+Step-12: MVC Architecture Setup
